@@ -20,6 +20,7 @@ public class DashboardController {
 
     private final DashboardService dashboardService;
 
+
     @GetMapping("/user")
     public ResponseEntity<String> getUserDetails() {
         val accountNumber = LoggedinUser.getAccountNumber();

@@ -19,8 +19,10 @@ public class CacheConfig {
 
     @Bean
     public CacheManager cacheManager() {
-        val cacheManager = new CaffeineCacheManager();
-        cacheManager.setCacheNames(List.of("otpAttempts")); // Define the cache name
+     
+        //val cacheManager = new CaffeineCacheManager();sssss
+        val cacheManager = new CaffeineCacheManager();//ss
+        cacheManager.setCacheNames(List.of("otpAttempts")); // Define the cache names
         cacheManager.setCaffeine(caffeineConfig());
         return cacheManager;
     }
